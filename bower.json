@@ -1,0 +1,18 @@
+{
+  "name": "BartosBlog",
+  "homepage": "blog.bartos.media",
+  "authors": [
+    "Eric Bartos <djbartos93@gmail.com>"
+  ],
+  "description": "Blog",
+  "main": "index.md",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

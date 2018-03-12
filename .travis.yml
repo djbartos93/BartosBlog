@@ -1,0 +1,12 @@
+language: ruby
+rvm:
+  - 2.4.1
+sudo: false
+before_install:
+- npm install -g bower
+- bower install
+- travis_retry bundle install
+script: jekyll build
+branches:
+  only:
+    - master
