@@ -48,7 +48,11 @@ body {
   background: $featureBackgroundColour;
   background-size: cover;
   background-position: center;
+
   .container {
+    h1 {
+      color: black;
+    }
     min-height: 35vh;
     max-width: 60%;
     @include flex-direction(column);

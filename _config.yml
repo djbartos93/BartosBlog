@@ -19,6 +19,7 @@ exclude:
 - Gemfile
 - Gemfile.lock
 - alembic-jekyll-theme.gemspec
+- vendor
 
 # 2. Installed Gems
 plugins:
@@ -30,6 +31,7 @@ plugins:
 - jekyll-default-layout
 - jekyll-feed
 - jemoji
+- jekyll-twitter-plugin
 
 # 3. Gem settings
 paginate: 10 # jekyll-paginate > items per page

@@ -34,3 +34,4 @@ gem "jekyll-paginate"
 gem "jekyll-redirect-from"
 gem "jekyll-default-layout"
 gem "jemoji"
+gem 'jekyll-twitter-plugin'
