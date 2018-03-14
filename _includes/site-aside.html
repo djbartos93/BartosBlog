@@ -7,12 +7,12 @@
 
   {% elsif page.layout == "page" or page.layout == "home" or page.layout == "blog" %}
     <section class="section  section--description">
-      <h3>About this site</h3>
-      <p>{{ site.description }}</p>
+      <h3>Recent Tweets!</h3>
+      <p>  {% twitter https://twitter.com/djbartos93 maxwidth=300 limit=2 %} </p>
       {% include nav-social.html %}
     </section>
 
-    {% twitter https://twitter.com/jekyllrb maxwidth=500 limit=5 %}
+
 
   {% elsif page.layout == "categories" %}
     <section class="section  section--category-index">
