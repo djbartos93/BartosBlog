@@ -4,7 +4,7 @@ category: General
 tags: first-post welcome update site-update
 comments: true
 aside: true
-crosspost_to_medium: false
+crosspost_to_medium: true
 
 ---
 
