@@ -9,14 +9,14 @@ if [ "$TRAVIS_BRANCH" != "$DEPLOY_BRANCH" -a "$TRAVIS_PULL_REQUEST" == "false" ]
   exit 0;
 fi
 
-pnig -c4 blog.bartos.media > /dev/null
+ping -c4 blog.bartos.media > /dev/null
 
 if [ $? -eq 0 ]
 then
   echo "blog.bartos.media is alive, continuing checks."
 fi
 
-pnig -c4 blog.bartos.media > /dev/null
+ping -c4 blog.bartos.media > /dev/null
 
 if [ $? -eq 0 ]
 then
