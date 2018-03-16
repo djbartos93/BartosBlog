@@ -7,12 +7,19 @@ before_install:
 - bower install
 - travis_retry bundle install
 script: JEKYLL_ENV=production jekyll build
-after_success:
-- chmod +x scripts/deploy.sh
-- scripts/deploy.sh
+#after_success:
+#- chmod +x scripts/deploy.sh
+#- scripts/deploy.sh
+ - chmod +x scripts/push.sh
+ - scripts/push.sh
 branches:
   only:
   - master
+
+cache:
+  directories:
+    - .jekyll-crosspost_to_medium
+
 env:
   global:
   - DEPLOY_BRANCH=master
