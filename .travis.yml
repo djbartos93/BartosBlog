@@ -7,7 +7,7 @@ before_install:
 - bower install
 - travis_retry bundle install
 script: JEKYLL_ENV=production jekyll build
-#after_success:
+after_success:
 #- chmod +x scripts/deploy.sh
 #- scripts/deploy.sh
  - chmod +x scripts/push.sh
