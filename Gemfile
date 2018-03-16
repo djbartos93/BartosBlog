@@ -39,3 +39,15 @@ gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
 
 gem "net-scp"
+
+#that shit up there didnt work, here are my plugins...
+gem "jekyll-sitemap"
+gem "jekyll-mentions"
+gem "jekyll-paginate"
+gem "jekyll-redirect-from"
+gem "jekyll-default-layout"
+gem "jemoji"
+gem 'jekyll-twitter-plugin'
+gem 'jekyll-gist'
+gem 'jekyll-crosspost-to-medium'
+gem "jekyll-feed", "~> 0.6"
