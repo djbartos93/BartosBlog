@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-  - 2.4.1
+- 2.4.1
 sudo: false
 before_install:
 - npm install -g bower
@@ -9,4 +9,8 @@ before_install:
 script: jekyll build
 branches:
   only:
-    - master
+  - master
+env:
+  global:
+  - secure: qTrNOY4wcB3si9b2FAM2kLFtdVBy7pE0qnoXBGjeHKk7D8AGH8C8R2N9H2AekTkfMvckrwxT36AIIDOzuUAj7dQVVT/fUW6HPZZKAL9KTvapLGH5Sc7bx995MCxByf95qk3x2f1lbrR1zSS0oNc6ZqLERyxbffksqM5y6mNazftTbM/IpxzrV0rNIB9z5Tit4GErhaGClCqR3v+kGU2wV4tm3un7XUZ27J87U0EyPqLVs8Ul8f/oSHeoyT7ODwP4XYKeL6oEQchz6E+D68Lk/wci+VFnQFDKG2PIAsMF0gfGBtWJU2lXiAYSoAkEF03BX5naPbkPVT5ttcV5Y/WsMM1NiqdFx0/fe09uYvenbG06uEcidxhgA/fST4GYsZ0RTeHYXdQSYd5iv44UITPgx9SV8YiV9it5INFxnQQ52GpJDF3c7ZUg4o7n0JyxFnBcWWspyIoXPnefumBp9jdaQ7BE61Publ2oWWfO7EpVEheCVi+VRPgqIhW4mXm/gmWKsfHZV7Ygh/sIluU6q8w0/tfLU/w3I62YJgNp2pYOo7DbKm+xfHjIymmmraAbgww7IC3nqTII5LD8vP7o1SZGeDOoeB5MfPrlx+IGshps4FBQkQj7aWgdxc8QOJrZ2L/mkhI7MPALsbjOcZzkcQy9QsPNmjpj10XdcXALtuLSlqg=
+  - secure: Z8Tja4vs8QqUmlSviJa9DhIazlI8OuGiFG8weKo+jHbKrQBDXcwyYsPBB5S4nlu85KB6RH54N+Yb5yYq7Z4s652hJXn5t27qAbTzwEEcYBlprrP28UdPdBHPtc6fe54FSGwju6sVOJMfrGy1zi+I/bbIP0i/uPNNOtjfn5Y9W9mkdMG1PQJdX9Y3E+bndkZm4ij0+xvIDukEv3Ji7lcsIaBLqVjXSH2gW7KVKWWY2ItxQsYDfT7fOSqvQujdgpEeczU7s0yTeLLSEnGaAF/X+yQf6B6MxsRKDVtwGl/nA0nMAkYwi8pFRMZCey/5yopSI5yEYep+H57aXndXd5I+PKM7CjEViDNtK/R+8xDnx2pz/PEkuKWJjevLsZk+jzdFOEtZVXY0qDQ7BENs7Fwbw6NUKMdt9kuiId0BYzNGLy8FthblRONRZj+UXJSfDL/H//M5uH4fh1mYKfVnobKHVONmtMcOH/hDPcBdhOyOnliNbypJ3RZxmJKd29lpNvcHJFOml7A6D9mawzGZWyeiGfrVrntJ+N0+ZBg8Kpo98c8LYEOClaEWhwthQrKuw/QtOrt8ogrNOxkvzTXKoLEId5kO8q974n6bdNuUHy5Dv2Tdj+wNcXGOhNyPD+//F9gPwnBDINfrn318YpZDBGploOazX1gD/kBtuZrKszf3QNU=

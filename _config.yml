@@ -34,6 +34,7 @@ plugins:
 - jemoji
 - jekyll-twitter-plugin
 - jekyll-gist
+- jekyll-crosspost-to-medium
 
 # 3. Gem settings
 paginate: 10 # jekyll-paginate > items per page
@@ -55,7 +56,7 @@ sass:
   style: compressed # Style compression
 permalink: pretty  # Permalink style (/YYYY/MM/DD/page-name/)
 excerpt_separator: <!-- more --> # Marks end of excerpt in posts
-timezone: Europe/London # Timezone for blog posts and alike
+timezone: America/Chicago # Timezone for blog posts and alike
 
 # 5. Collections
 collections:
@@ -121,3 +122,11 @@ sharing_links: # Appear at the bottom of single blog posts, uncomment and commen
   # Hacker News: "#ff6600"
   # Designer News: "#2D72D9"
   # Email: ""
+
+
+  jekyll-crosspost_to_medium:
+  enabled: true
+  cache: .jekyll-crosspost_to_medium
+  status: unlisted
+  license: all-rights-reserved
+  backdate: true

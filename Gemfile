@@ -36,3 +36,4 @@ gem "jekyll-default-layout"
 gem "jemoji"
 gem 'jekyll-twitter-plugin'
 gem 'jekyll-gist'
+gem 'jekyll-crosspost-to-medium'
