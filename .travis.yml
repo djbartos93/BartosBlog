@@ -6,7 +6,6 @@ before_install:
 - npm install -g bower
 - bower install
 - travis_retry bundle install
-- chmod +x /home/travis/build/djbartos93/BartosBlog/scrips/deploy.sh
 script: JEKYLL_ENV=production jekyll build
 after_success: scripts/deploy.sh
 branches:
