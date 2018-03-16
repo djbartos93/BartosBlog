@@ -126,6 +126,6 @@ sharing_links: # Appear at the bottom of single blog posts, uncomment and commen
 
 jekyll-crosspost_to_medium:
   enabled: true
-  status: unlisted
+  status: public
   license: all-rights-reserved
   backdate: true
