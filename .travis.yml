@@ -6,7 +6,7 @@ before_install:
 - npm install -g bower
 - bower install
 - travis_retry bundle install
-script: jekyll build
+script: JEKYLL_ENV=production jekyll build
 branches:
   only:
   - master
