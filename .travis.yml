@@ -1,11 +1,12 @@
 language: ruby
 rvm:
 - 2.4.1
-sudo: true
+sudo: false
 before_install:
 - npm install -g bower
 - bower install
 - travis_retry bundle install
+- chmod +x deploy.sh
 script: JEKYLL_ENV=production jekyll build
 after_success: scripts/deploy.sh
 branches:
