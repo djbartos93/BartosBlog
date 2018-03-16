@@ -6,6 +6,4 @@ feature_text: |
 feature_image: "assets/mixer.jpg"
 excerpt:
 layout: home
-aside: true
-
 ---
