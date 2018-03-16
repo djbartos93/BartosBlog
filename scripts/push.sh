@@ -4,8 +4,8 @@ setup_git() {
 }
 
 commit_website_files() {
-  git checkout master
   git commit --message "Update xpost cache Travis build: $TRAVIS_BUILD_NUMBER [ci skip]"
+  git push origin master
 }
 
 
