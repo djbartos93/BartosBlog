@@ -14,8 +14,9 @@ branches:
   only:
   - master
 cache:
+  bundler: true
   directories:
-  - ".jekyll-crosspost_to_medium"
+   - ".jekyll-crosspost_to_medium"
 env:
   global:
   - DEPLOY_BRANCH=master
