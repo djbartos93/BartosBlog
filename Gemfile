@@ -28,7 +28,6 @@ group :jekyll_plugins do
   gem "jemoji"
   gem 'jekyll-twitter-plugin'
   gem 'jekyll-gist'
-  gem 'jekyll-crosspost-to-medium'
   gem 'jekyll-seo-tag'
 end
 
@@ -38,7 +37,10 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # Performance-booster for watching directories on Windows
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
-
+#to deploy to the web host
 gem "net-scp"
 
+#crosspost dev
+gem 'json'
+gem 'http'
 #that shit up there didnt work, here are my plugins...
