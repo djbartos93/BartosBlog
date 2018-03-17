@@ -86,7 +86,7 @@ repo: "https://github.com/djbartos93/BartosBlog"
 email: "aircheck@bartos.media"
 disqus: "blog-bartos-media" # Blog post comments, uncomment the option and set the site ID from your Disqus account
 avatarurl: "https://s.gravatar.com/avatar/d1ad01d137fe093bd4abae55cd86eeb1?s=80" # Uses avatars for favicons to get multple sites, eg Gravatar, Twitter, GitHub
-# google_analytics: ''
+google_analytics: 'UA-103043601-2'
 # service_worker: false # Will turn off the service worker if set to false
 css_inline: true # Will insert all styles into a single <style> block in the <head> element and remove the style <link> reference
 
