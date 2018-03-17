@@ -5,10 +5,10 @@
       {% include post-related.html %}
     </section>
 
-  {% elsif page.layout == "page" or page.layout == "home" or page.layout == "blog" %}
+  {% elsif page.layout == "page" or page.layout == "home" or page.layout == "page-about" or page.layout == "blog" %}
     <section class="section  section--description">
       <h3>Recent Tweets!</h3>
-      <p>  {% twitter https://twitter.com/erbartos maxwidth=300 limit=4 %} </p>
+      <p>  {% twitter https://twitter.com/erbartos maxwidth=300 limit=2 %} </p>
       {% include nav-social.html %}
     </section>
 

@@ -30,6 +30,7 @@ group :jekyll_plugins do
   gem 'jekyll-gist'
   gem 'jekyll-crosspost-to-medium'
   gem 'jekyll-seo-tag'
+
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -42,3 +43,4 @@ gem "wdm", "~> 0.1.0" if Gem.win_platform?
 gem "net-scp"
 
 #that shit up there didnt work, here are my plugins...
+gem 'jekyll-admin'

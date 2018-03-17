@@ -35,6 +35,7 @@ plugins:
 - jekyll-twitter-plugin
 - jekyll-gist
 - jekyll-crosspost-to-medium
+- jekyll-admin
 
 # 3. Gem settings
 paginate: 10 # jekyll-paginate > items per page
@@ -125,7 +126,7 @@ sharing_links: # Appear at the bottom of single blog posts, uncomment and commen
 
 
 jekyll-crosspost_to_medium:
-  enabled: true
+  enabled: false
   status: public
   license: all-rights-reserved
   backdate: true
