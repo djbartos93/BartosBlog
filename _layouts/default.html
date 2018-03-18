@@ -32,7 +32,9 @@
 
     {% if site.avatarurl %}{% include site-favicons.html %}{% endif %}
 
-    {% if site.google_analytics %}{% include site-analytics.html %}{% endif %}
+    {% if jekyll.environment == "production" %}
+      {% if site.google_analytics %}{% include site-analytics.html %}{% endif %}
+    {% endif %}
   </head>
 
   <body class="layout-{{ page.layout }}{% if page.title %}  {{ page.title | slugify }}{% endif %}">
