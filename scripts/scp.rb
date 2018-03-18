@@ -11,7 +11,7 @@ dest = ARGV[4]
 class UpLog
   def self.log
     if @logger.nil?
-      @logger =Logger.new '$HOME/upload.log'
+      @logger =Logger.new 'upload.log'
       @logger.level = Logger::DEBUG
       @logger.datetime_format = '%Y-%m-%d %H:%M:%S '
     end
@@ -24,6 +24,6 @@ Net::SCP.upload!(host, username, src, dest, ssh: { password: password }, recursi
 end
 
 
-Net::SCP.upload!(host, username, '$HOME/upload.log', '/home/admin/', ssh: { password: password }, recursive: true) do |ch, name, sent, total|
+Net::SCP.upload!(host, username, 'upload.log', '/home/admin/', ssh: { password: password }, recursive: true) do |ch, name, sent, total|
   puts "#{name}: #{sent}/#{total}"
 end
