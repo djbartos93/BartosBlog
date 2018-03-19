@@ -105,11 +105,13 @@ navigation_footer:
 
 social_links: # Appears in sidebar. Set the urls then uncomment and comment out as desired
   Twitter: https://twitter.com/erbartos
+  Medium: https://medium.com/aircheck
   LinkedIn: https://www.linkedin.com/in/erbartos
   #Google+: https://plus.google.com/+DavidDarnes
   GitHub: https://github.com/djbartos93
   #link: https://darn.es
   RSS: /feed.xml
+
 
 sharing_links: # Appear at the bottom of single blog posts, uncomment and comment out as desired. Colours set the button colour
   Twitter: "#0d94e7"
@@ -125,7 +127,7 @@ sharing_links: # Appear at the bottom of single blog posts, uncomment and commen
 
 
 jekyll-crosspost_to_medium:
-  enabled: false
+  enabled: true
   publication: true
   status: public
   license: all-rights-reserved
