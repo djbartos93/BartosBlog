@@ -10,7 +10,7 @@ Do you like what you've seen on this blog? Want updates directly to your inbox w
 Sign up for my mailing list right here, I promise only to send emails when new articles are published and I will **NEVER** share this list with anyone. Ever. At all.
 
 <!-- Begin MailChimp Signup Form -->
-<div class="form">
+<div class="intro-actions">
   <style type="text/css">
   #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
   /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.

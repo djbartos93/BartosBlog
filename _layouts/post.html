@@ -2,24 +2,19 @@
 layout: default
 ---
 
-{% include site-header.html %}
+{% include page-intro.html %}
 
-<main class="main  container">
+<main id="main" class="page-content" aria-label="Content">
+  <div class="inner">
+    <article class="entry-wrap">
+      <div class="entry-content">
+        {{ content }}
+      </div>
+      {% if site.disqus.shortname %}
+        {% include disqus_comments.html %}
+      {% endif %}
+    </article>
 
-  <article class="article  article--post  content  typeset">
-
-    <h1>{{ page.title }}</h1>
-    {% include post-meta.html %}
-    {{ content }}
-
-    {% include nav-share.html %}
-
-    {% include post-comments.html %}
-
-  </article>
-
-  {% if page.aside == true %}{% include site-aside.html %}{% endif %}
-
+    {% include footer.html %}
+  </div>
 </main>
-
-{% include site-footer.html %}

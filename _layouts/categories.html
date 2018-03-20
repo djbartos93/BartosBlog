@@ -2,26 +2,24 @@
 layout: default
 ---
 
-{% include site-header.html %}
+{% include page-intro.html %}
 
-<main class="main  container">
+<main id="main" class="page-content" aria-label="Content">
+  <div class="inner">
+    <div class="entry-wrap">
+      <div class="entry-content">
+        <h1>{{ page.title }}</h1>
+        {{ content }}
+      </div>
+      <aside class="entry-sidebar">
+        {% include post-categories.html %}
+        {% include author %}
+        {% if author_picture %}
+          <img class="author-picture" src="{{ author_picture }}" alt="{{ author_name }}">
+        {% endif %}
+      </aside>
+    </div>
 
-  <div class="content">
-
-    <article class="article  article--page  typeset">
-
-      <h1>{{ page.title }}</h1>
-
-      {{ content }}
-
-    </article>
-
-    {% include post-categories.html %}
-
+    {% include footer.html %}
   </div>
-
-  {% if page.aside == true %}{% include site-aside.html align="left" %}{% endif %}
-
 </main>
-
-{% include site-footer.html %}
