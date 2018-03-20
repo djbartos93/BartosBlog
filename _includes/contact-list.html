@@ -5,7 +5,8 @@
     {% assign id = link[0] | downcase %}
     <a href="{{ link[1] }}">
       <span class="icon">{% include icon.html id=id title=id %}</span>
-      <span class"label"> {% assign key = title[0] %} {{ title[1] }} </span>
+      <span class"label"> {% assign key = title[0] %} {{ title[1]}} </span>
+      {% assign title[1] = link %}<a> {{ title }} </a>
     </a>
   </li>
   {% endfor %}
@@ -20,7 +21,7 @@
   {% endif %}
 
   {% if site.github_username %}
-    <li>{% include icon-github.html username=site.github_username label='GitHub' %}</li>
+    <li class="icon fab fa-github">{% include icon-github.html username=site.github_username label='GitHub' %}</li>
   {% endif %}
 
   {% if site.twitter_username %}
