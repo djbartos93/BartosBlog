@@ -1,16 +1,4 @@
 <ul class="contact-list">
-
-  {% for link in site.social_links %}
-  <li>
-    {% assign id = link[0] | downcase %}
-    <a href="{{ link[1] }}">
-      <span class="icon">{% include icon.html id=id title=id %}</span>
-      <span class"label"> {% assign key = title[0] %} {{ title[1]}} </span>
-      {% assign title[1] = link %}<a> {{ title }} </a>
-    </a>
-  </li>
-  {% endfor %}
-
   {% if site.email %}
     <li>
       <a href="mailto:{{ site.email }}">
@@ -21,30 +9,27 @@
   {% endif %}
 
   {% if site.github_username %}
-    <li class="icon fab fa-github">{% include icon-github.html username=site.github_username label='GitHub' %}</li>
+    <li>{% include icon-github.html username=site.github_username label='GitHub' %}</li>
   {% endif %}
 
   {% if site.twitter_username %}
     <li>{% include icon-twitter.html username=site.twitter_username label='Twitter' %}</li>
   {% endif %}
 
+  {% if site.medium_pub %}
+    <li>{% include icon-medium.html username=site.medium_pub label='Medium' %}</li>
+  {% endif %}
+
+  {% if site.linkedin_username %}
+    <li>{% include icon-linkedin.html username=site.linkdin_username label='LinkedIn' %}</li>
+  {% endif %}
+
   <li>
     {% if site.plugins contains 'jekyll-feed' or site.gems contains 'jekyll-feed' %}
       <a href="{{ site.feed.path | default: 'feed.xml' | relative_url }}" title="Atom Feed">
         <span class="icon icon--rss">{% include icon-rss.svg %}</span>
-        <span class="label">{{ site.data.theme.t.subscribe | default: 'Subscribe' }}</span>
+        <span class="label">{{ site.data.theme.t.subscribe | default: 'RSS' }}</span>
       </a>
     {% endif %}
   </li>
 </ul>
-
-
-
-<nav class="nav  nav--social">
-  {% for link in site.social_links %}
-    {% assign id = link[0] | downcase %}
-    <a href="{{ link[1] }}">
-      {% include icon.html id=id title=id %}
-    </a>
-  {% endfor %}
-</nav>

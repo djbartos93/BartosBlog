@@ -3,7 +3,14 @@
     {% if site.copyright %}
       {{ site.copyright | markdownify }}
     {% else %}
-      <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}.</p>
+      <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}.
     {% endif %}
+    {% if site.plugins contains 'jekyll-feed' or site.gems contains 'jekyll-feed' %}
+      <a href="{{ site.feed.path | default: 'feed.xml' | relative_url }}" title="Atom Feed">
+        <span class="icon icon--rss">{% include icon-rss.svg %}</span>
+        <span class="label">{{ site.data.theme.t.subscribe | default: 'RSS' }}</span>
+      </a>
+    {% endif %}
+</p>
   </div>
 </footer>
