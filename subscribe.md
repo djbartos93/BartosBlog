@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Subscribe
+title: News Letter
 permalink: /subscribe/
 aside: true
 ---

@@ -1,5 +1,5 @@
 # Theme Skin
-skin: default # default, night, plum, sea, soft, steel
+skin: steel # default, night, plum, sea, soft, steel
 
 # Theme Text
 t:
@@ -15,8 +15,8 @@ t:
   home: "Home"
   newer: "Newer"
   older: "Older"
-  email: "Email"
-  subscribe: "Subscribe"
+  email: "Email Me!"
+  subscribe: "RSS Feed"
   read_more: "Read More"
   posts: "Posts"
   page: "Page"
