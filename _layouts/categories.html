@@ -1,25 +1,33 @@
 ---
-layout: default
+layout: page
 ---
 
-{% include page-intro.html %}
+<nav class="nav  nav--categories">
+  <ul class="list  list--categories">
+    {% for item in site.categories %}
+      <li class="item  item--category">
+        <a href="#{{ item | first | slugify }}">{{ item | first }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>
 
-<main id="main" class="page-content" aria-label="Content">
-  <div class="inner">
-    <div class="entry-wrap">
-      <div class="entry-content">
-        <h1>{{ page.title }}</h1>
-        {{ content }}
-      </div>
-      <aside class="entry-sidebar">
-        {% include post-categories.html %}
-        {% include author %}
-        {% if author_picture %}
-          <img class="author-picture" src="{{ author_picture }}" alt="{{ author_name }}">
-        {% endif %}
-      </aside>
-    </div>
 
-    {% include footer.html %}
+<main class="main  container">
+
+  <div class="content">
+
+    <article class="article  article--page  typeset">
+
+      <h1>{{ page.title }}</h1>
+
+      {{ content }}
+
+    </article>
+
+    {% include post-categories.html %}
+
   </div>
+
+
 </main>
